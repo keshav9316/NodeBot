@@ -4,7 +4,7 @@ let pose;
 let skeleton;
 let brain;
 let count;
-let poselabel ="Y";
+let poselabel ="...";
 //hardware************/
 var five = require("johnny-five");
 var keypress = require("keypress");
