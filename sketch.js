@@ -157,7 +157,7 @@ function draw(){
        let bodypart = pose.keypoints[i].part;
        textSize(20);
        text(bodypart, x, y);
-        display accuracy
+        //display accuracy
         let score = pose.keypoint[i].score;
         text(score, x, y);
 
