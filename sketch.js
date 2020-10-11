@@ -5,7 +5,7 @@ let skeleton;
 let brain;
 let count;
 let poselabel ="...";
-//hardware************/
+//**********hardware************/
 // var five = require("johnny-five");
 // var keypress = require("keypress");
 // var board = new five.Board();
@@ -36,7 +36,7 @@ function keyPressed(){
 }
 
 function setup(){
-    createP('NodeBot : { Try staying inside frame. Move left and right slowly and stay in position to wittness controls. }');
+    createP('NodeBot : { Try staying inside frame. Move left and right slowly and stay in position. }');
     createCanvas(640, 480);
     video = createCapture(VIDEO);
     video.hide(); 
@@ -189,7 +189,7 @@ try{
 } catch {
     text('count = 0 ',0,height+1);
 }
-//  HARDWARE ******************************
+//  ***********************HARDWARE ******************************
 /*board.on("ready", function() {
     var motorL = new five.Motor([3, 12]);
     var motorR = new five.Motor([5, 13]);
@@ -220,5 +220,5 @@ try{
         }
   });
   */
-  // HARDWARE END*************************
+  // **************************HARDWARE END*************************
 }
