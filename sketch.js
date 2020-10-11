@@ -6,9 +6,9 @@ let brain;
 let count;
 let poselabel ="...";
 //hardware************/
-var five = require("johnny-five");
-var keypress = require("keypress");
-var board = new five.Board();
+// var five = require("johnny-five");
+// var keypress = require("keypress");
+// var board = new five.Board();
 //*******************/
 let state = 'waiting';
 let targetlabel;
