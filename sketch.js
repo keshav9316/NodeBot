@@ -5,10 +5,10 @@ let skeleton;
 let brain;
 let count;
 let poselabel ="Y";
-// //hardware************/
-// var five = require("johnny-five");
-// var keypress = require("keypress");
-// var board = new five.Board();
+//hardware************/
+var five = require("johnny-five");
+var keypress = require("keypress");
+var board = new five.Board();
 //*******************/
 let state = 'waiting';
 let targetlabel;
@@ -154,12 +154,12 @@ function draw(){
         fill(0,255,0);
         ellipse(x,y,16,16);
         // display body part name
-      //  let bodypart = pose.keypoints[i].part;
-      //  textSize(20);
-      //  text(bodypart, x, y);
-        // display accuracy
-        // let score = pose.keypoint[i].score;
-        // text(score, x, y);
+       let bodypart = pose.keypoints[i].part;
+       textSize(20);
+       text(bodypart, x, y);
+        display accuracy
+        let score = pose.keypoint[i].score;
+        text(score, x, y);
 
     }
 
