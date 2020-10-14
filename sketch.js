@@ -6,9 +6,9 @@ let brain;
 let count;
 let poselabel ="...";
 //**********hardware************/
-// var five = require("johnny-five");
-// var keypress = require("keypress");
-// var board = new five.Board();
+var five = require("johnny-five");
+var keypress = require("keypress");
+var board = new five.Board();
 //*******************/
 let state = 'waiting';
 let targetlabel;
@@ -190,7 +190,7 @@ try{
     text('count = 0 ',0,height+1);
 }
 //  ***********************HARDWARE ******************************
-/*board.on("ready", function() {
+board.on("ready", function() {
     var motorL = new five.Motor([3, 12]);
     var motorR = new five.Motor([5, 13]);
     // Reverse the motor at maximum speed
@@ -219,6 +219,6 @@ try{
           motorR.rev(speed * 0.75);
         }
   });
-  */
+
   // **************************HARDWARE END*************************
 }
